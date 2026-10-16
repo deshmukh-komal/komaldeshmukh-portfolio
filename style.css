@@ -49,15 +49,9 @@ h1, h2, h3, p { margin-top: 0; }
 .text-link span { color: var(--gold); }
 .hero-footnote { display: flex; width: min(470px, 100%); justify-content: space-between; margin-top: 65px; padding-top: 13px; border-top: 1px solid var(--line); color: #8e897e; font: 9px var(--mono); letter-spacing: .09em; }
 .hero-footnote span:first-child { color: var(--gold); }
-.hero-visual { position: relative; z-index: 1; width: 100%; max-width: 470px; aspect-ratio: .91; justify-self: end; overflow: hidden; border: 1px solid rgba(240,198,78,.32); background: #42301f url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85") center/cover; box-shadow: 22px 22px 0 rgba(153,83,44,.12), 0 25px 90px rgba(0,0,0,.3); animation: rise-in .9s .28s both; }
-.image-wash { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,15,11,.05), rgba(18,15,11,.72)), linear-gradient(110deg, rgba(25,20,13,.20), rgba(128,71,34,.16)); }
-.visual-caption { position: absolute; top: 18px; right: 18px; left: 18px; display: flex; justify-content: space-between; color: white; font: 9px var(--mono); letter-spacing: .1em; }
-.visual-caption span:last-child { color: var(--gold); font-size: 18px; }
+.hero-visual { position: relative; z-index: 1; width: 100%; max-width: 470px; aspect-ratio: .88; justify-self: end; overflow: hidden; border: 1px solid rgba(240,198,78,.32); background: #42301f; box-shadow: 22px 22px 0 rgba(153,83,44,.12), 0 25px 90px rgba(0,0,0,.3); animation: rise-in .9s .28s both; }
+.hero-visual img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
 .orbit { position: absolute; border: 1px solid rgba(240,198,78,.55); border-radius: 50%; transform: rotate(-35deg); }
-.orbit-one { top: 25%; left: 13%; width: 76%; height: 38%; }
-.orbit-two { top: 32%; left: 13%; width: 76%; height: 38%; border-color: rgba(240,236,226,.28); }
-.visual-note { position: absolute; right: 18px; bottom: 26px; color: #fff8e6; font-family: var(--script); font-size: clamp(30px, 4vw, 49px); font-weight: 600; line-height: .77; text-align: right; text-shadow: 0 2px 18px #17110b; transform: rotate(-5deg); }
-.visual-note em { color: var(--gold); font-style: normal; }
 .scroll-cue { position: absolute; z-index: 2; bottom: 34px; left: 10vw; display: flex; align-items: center; gap: 12px; color: #8f8a7f; font: 9px var(--mono); letter-spacing: .11em; }
 .scroll-line { display: inline-block; width: 32px; height: 1px; background: var(--gold); }
 .hero-index { position: absolute; right: 7vw; bottom: 34px; color: #777267; font: 9px var(--mono); }
@@ -184,8 +178,7 @@ h2 { margin-bottom: 0; font-size: clamp(34px, 4.2vw, 57px); font-weight: 600; le
   .hero h1 { max-width: 480px; font-size: clamp(40px, 11vw, 60px); }
   .hero-intro { max-width: 420px; font-size: 14px; }
   .hero-footnote { margin-top: 35px; }
-  .hero-visual { width: min(100%, 400px); aspect-ratio: 1.28; justify-self: center; }
-  .visual-note { font-size: 39px; }
+  .hero-visual { width: min(100%, 400px); aspect-ratio: .88; justify-self: center; }
   .scroll-cue { bottom: 29px; left: 24px; }
   .hero-index { right: 24px; bottom: 29px; }
   .section, .contact-section { padding: 81px 24px; }
